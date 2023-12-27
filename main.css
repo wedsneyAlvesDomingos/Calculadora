@@ -1,0 +1,85 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: #272727;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+.container{
+    position: absolute;
+    z-index: 9;
+    width: 100vw;
+    height: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cauculator{
+    background: #2e1d36;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: #00eeff11 0px 0px 20px 20px,  #00eeff19 0px 0px 10px 10px,  #00eeff33 0px 0px 5px 5px, #00eeffbb 0px 0px 1px 1px;
+}
+
+.cauculator form input{
+    margin: 10px;
+    padding: 2px;
+    border:0;
+    outline: 0;
+    width: 60px;
+    height:60px;
+    border-radius:10px;
+    box-shadow: #38c5cf3f 0px 0px 6px 2px;
+    cursor: pointer;
+    font-size:20px;
+    color: #fff;
+    background: transparent;
+    transition: 0.2s;
+}
+.cauculator form input:hover{
+    border: 1px solid #00eeffaa ;
+    box-shadow: #38c5cf9f 0px 0px 6px 2px, #38c5cf9f 0px 0px 6px 2px inset;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin:20px 0;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    background: #76b49133;
+    box-shadow: 2px 2px 5px 4px rgba(30, 30, 30, 0.1) inset;
+}
+
+form .display input:hover{
+    border:0 ;
+    box-shadow: none;
+    box-shadow: 2px 2px 5px 4px rgba(30, 30, 30, 0.1) inset;
+}
+
+form input.equal{
+    width: 145px;
+}
+form input.operator{
+    color:#eaff76;
+}
+
+form input.operator:hover{
+    color:#aec200;
+}
